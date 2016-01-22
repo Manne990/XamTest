@@ -2,6 +2,7 @@
 
 using Xamarin.Forms;
 using SharpRaven;
+using XamTest.Pages;
 
 namespace XamTest
 {
@@ -10,7 +11,7 @@ namespace XamTest
         public App()
         {
             // The root page of your application
-            MainPage = new MainPage();
+            MainPage = new CircularProgressPage();
 
             //var ravenClient = new RavenClient("https://dcbb67ba67344e158d826315a2c05f55:b5e949d1ab3f47d7b17599dbbc4e6f48@app.getsentry.com/55106");
 

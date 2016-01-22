@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:popover="clr-namespace:XamTest.Views.Popover;assembly=XamTest"
+	xmlns:local="clr-namespace:XamTest;assembly=XamTest"
+	x:Class="XamTest.Pages.PopoverExamplePage">
+
+	<ContentPage.Content>
+		<StackLayout>
+			<popover:PopoverPage x:Name="popoverPage" PopoverWidth="500" PopoverHeight="500">
+				<popover:PopoverPage.Content>
+					<local:SubPage1 />
+				</popover:PopoverPage.Content>
+			</popover:PopoverPage>
+
+			<Button Text="Show" Clicked="ShowButtonClicked" />
+		</StackLayout>
+	</ContentPage.Content>
+
+</ContentPage>

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Xamarin.Forms;
-using System.Threading.Tasks;
-using System.Net;
 using System.IO;
+using System.Net;
+using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace XamTest
 {

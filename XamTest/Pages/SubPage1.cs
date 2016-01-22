@@ -1,10 +1,11 @@
 ﻿using System;
 
 using Xamarin.Forms;
+using XamTest.Views.Popover;
 
 namespace XamTest
 {
-    public class SubPage1 : ContentPage
+    public class SubPage1 : PopoverContentPage
     {
         public SubPage1()
         {
@@ -13,7 +14,7 @@ namespace XamTest
                 BackgroundColor = Color.Maroon,
                 Padding = new Thickness(50),
                 VerticalOptions = LayoutOptions.FillAndExpand,
-                HorizontalOptions = LayoutOptions.FillAndExpand
+                HorizontalOptions = LayoutOptions.FillAndExpand,
             };
         }
     }
