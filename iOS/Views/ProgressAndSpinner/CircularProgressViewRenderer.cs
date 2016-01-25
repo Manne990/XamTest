@@ -37,7 +37,7 @@ namespace XamTest.iOS.Views.ProgressAndSpinner
 
         private void UpdateProgressView(float progress)
         {
-            var imageView = (UIImageView)this.Control;
+            var imageView = this.Control;
 
             if(imageView.Image == null)
             {

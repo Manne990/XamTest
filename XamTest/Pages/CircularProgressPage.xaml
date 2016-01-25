@@ -5,7 +5,7 @@
 	xmlns:progress="clr-namespace:XamTest.Views.ProgressAndSpinner;assembly=XamTest"
 	x:Class="XamTest.Pages.CircularProgressPage">
 	<ContentPage.Content>
-		<AbsoluteLayout Opacity="0.75">
+		<AbsoluteLayout Opacity="0.75" BackgroundColor="White">
 			<progress:CircularProgressView x:Name="spinner" AbsoluteLayout.LayoutBounds="0.5,0.2,200,200" AbsoluteLayout.LayoutFlags="PositionProportional" />
 			<progress:CircularProgressView x:Name="progressView" AbsoluteLayout.LayoutBounds="0.5,0.8,200,200" AbsoluteLayout.LayoutFlags="PositionProportional" />
 		</AbsoluteLayout>
