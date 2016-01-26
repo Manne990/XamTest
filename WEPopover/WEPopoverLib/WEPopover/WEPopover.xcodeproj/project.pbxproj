@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		219A36FB1AA0D9E800951CC9 /* libWEPopover.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 219A36EF1AA0D9E800951CC9 /* libWEPopover.a */; };
+		42A04CB71C57630E002EEE8C /* UIBarButtonItem+WEPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A04CAB1C57630E002EEE8C /* UIBarButtonItem+WEPopover.m */; };
+		42A04CB81C57630E002EEE8C /* WEBlockingGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A04CAD1C57630E002EEE8C /* WEBlockingGestureRecognizer.m */; };
+		42A04CB91C57630E002EEE8C /* WEPopoverContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A04CAF1C57630E002EEE8C /* WEPopoverContainerView.m */; };
+		42A04CBA1C57630E002EEE8C /* WEPopoverContainerViewProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A04CB11C57630E002EEE8C /* WEPopoverContainerViewProperties.m */; };
+		42A04CBB1C57630E002EEE8C /* WEPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A04CB31C57630E002EEE8C /* WEPopoverController.m */; };
+		42A04CBC1C57630E002EEE8C /* WETouchableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A04CB61C57630E002EEE8C /* WETouchableView.m */; };
+		42A04CBE1C57635E002EEE8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A04CBD1C57635E002EEE8C /* Foundation.framework */; };
+		42A04CC01C576391002EEE8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A04CBF1C576391002EEE8C /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		219A36FC1AA0D9E800951CC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 219A36E71AA0D9E800951CC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 219A36EE1AA0D9E800951CC9;
+			remoteInfo = WEPopover;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		219A36ED1AA0D9E800951CC9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		219A36EF1AA0D9E800951CC9 /* libWEPopover.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWEPopover.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		219A36FA1AA0D9E800951CC9 /* WEPopoverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WEPopoverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		219A37001AA0D9E800951CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42A04CAA1C57630E002EEE8C /* UIBarButtonItem+WEPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+WEPopover.h"; path = "Popover/UIBarButtonItem+WEPopover.h"; sourceTree = SOURCE_ROOT; };
+		42A04CAB1C57630E002EEE8C /* UIBarButtonItem+WEPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+WEPopover.m"; path = "Popover/UIBarButtonItem+WEPopover.m"; sourceTree = SOURCE_ROOT; };
+		42A04CAC1C57630E002EEE8C /* WEBlockingGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WEBlockingGestureRecognizer.h; path = Popover/WEBlockingGestureRecognizer.h; sourceTree = SOURCE_ROOT; };
+		42A04CAD1C57630E002EEE8C /* WEBlockingGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WEBlockingGestureRecognizer.m; path = Popover/WEBlockingGestureRecognizer.m; sourceTree = SOURCE_ROOT; };
+		42A04CAE1C57630E002EEE8C /* WEPopoverContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WEPopoverContainerView.h; path = Popover/WEPopoverContainerView.h; sourceTree = SOURCE_ROOT; };
+		42A04CAF1C57630E002EEE8C /* WEPopoverContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WEPopoverContainerView.m; path = Popover/WEPopoverContainerView.m; sourceTree = SOURCE_ROOT; };
+		42A04CB01C57630E002EEE8C /* WEPopoverContainerViewProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WEPopoverContainerViewProperties.h; path = Popover/WEPopoverContainerViewProperties.h; sourceTree = SOURCE_ROOT; };
+		42A04CB11C57630E002EEE8C /* WEPopoverContainerViewProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WEPopoverContainerViewProperties.m; path = Popover/WEPopoverContainerViewProperties.m; sourceTree = SOURCE_ROOT; };
+		42A04CB21C57630E002EEE8C /* WEPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WEPopoverController.h; path = Popover/WEPopoverController.h; sourceTree = SOURCE_ROOT; };
+		42A04CB31C57630E002EEE8C /* WEPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WEPopoverController.m; path = Popover/WEPopoverController.m; sourceTree = SOURCE_ROOT; };
+		42A04CB41C57630E002EEE8C /* WEPopoverParentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WEPopoverParentView.h; path = Popover/WEPopoverParentView.h; sourceTree = SOURCE_ROOT; };
+		42A04CB51C57630E002EEE8C /* WETouchableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WETouchableView.h; path = Popover/WETouchableView.h; sourceTree = SOURCE_ROOT; };
+		42A04CB61C57630E002EEE8C /* WETouchableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WETouchableView.m; path = Popover/WETouchableView.m; sourceTree = SOURCE_ROOT; };
+		42A04CBD1C57635E002EEE8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		42A04CBF1C576391002EEE8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		219A36EC1AA0D9E800951CC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A04CC01C576391002EEE8C /* UIKit.framework in Frameworks */,
+				42A04CBE1C57635E002EEE8C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		219A36F71AA0D9E800951CC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				219A36FB1AA0D9E800951CC9 /* libWEPopover.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		219A36E61AA0D9E800951CC9 = {
+			isa = PBXGroup;
+			children = (
+				42A04CBF1C576391002EEE8C /* UIKit.framework */,
+				42A04CBD1C57635E002EEE8C /* Foundation.framework */,
+				219A36F11AA0D9E800951CC9 /* WEPopover */,
+				219A36FE1AA0D9E800951CC9 /* WEPopoverTests */,
+				219A36F01AA0D9E800951CC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		219A36F01AA0D9E800951CC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				219A36EF1AA0D9E800951CC9 /* libWEPopover.a */,
+				219A36FA1AA0D9E800951CC9 /* WEPopoverTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		219A36F11AA0D9E800951CC9 /* WEPopover */ = {
+			isa = PBXGroup;
+			children = (
+				42A04CAA1C57630E002EEE8C /* UIBarButtonItem+WEPopover.h */,
+				42A04CAB1C57630E002EEE8C /* UIBarButtonItem+WEPopover.m */,
+				42A04CAC1C57630E002EEE8C /* WEBlockingGestureRecognizer.h */,
+				42A04CAD1C57630E002EEE8C /* WEBlockingGestureRecognizer.m */,
+				42A04CAE1C57630E002EEE8C /* WEPopoverContainerView.h */,
+				42A04CAF1C57630E002EEE8C /* WEPopoverContainerView.m */,
+				42A04CB01C57630E002EEE8C /* WEPopoverContainerViewProperties.h */,
+				42A04CB11C57630E002EEE8C /* WEPopoverContainerViewProperties.m */,
+				42A04CB21C57630E002EEE8C /* WEPopoverController.h */,
+				42A04CB31C57630E002EEE8C /* WEPopoverController.m */,
+				42A04CB41C57630E002EEE8C /* WEPopoverParentView.h */,
+				42A04CB51C57630E002EEE8C /* WETouchableView.h */,
+				42A04CB61C57630E002EEE8C /* WETouchableView.m */,
+			);
+			path = WEPopover;
+			sourceTree = "<group>";
+		};
+		219A36FE1AA0D9E800951CC9 /* WEPopoverTests */ = {
+			isa = PBXGroup;
+			children = (
+				219A36FF1AA0D9E800951CC9 /* Supporting Files */,
+			);
+			path = WEPopoverTests;
+			sourceTree = "<group>";
+		};
+		219A36FF1AA0D9E800951CC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				219A37001AA0D9E800951CC9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		219A36EE1AA0D9E800951CC9 /* WEPopover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 219A37031AA0D9E800951CC9 /* Build configuration list for PBXNativeTarget "WEPopover" */;
+			buildPhases = (
+				219A36EB1AA0D9E800951CC9 /* Sources */,
+				219A36EC1AA0D9E800951CC9 /* Frameworks */,
+				219A36ED1AA0D9E800951CC9 /* CopyFiles */,
+				42E9AB511C575DAD006DB5FE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WEPopover;
+			productName = WEPopover;
+			productReference = 219A36EF1AA0D9E800951CC9 /* libWEPopover.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		219A36F91AA0D9E800951CC9 /* WEPopoverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 219A37061AA0D9E800951CC9 /* Build configuration list for PBXNativeTarget "WEPopoverTests" */;
+			buildPhases = (
+				219A36F61AA0D9E800951CC9 /* Sources */,
+				219A36F71AA0D9E800951CC9 /* Frameworks */,
+				219A36F81AA0D9E800951CC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				219A36FD1AA0D9E800951CC9 /* PBXTargetDependency */,
+			);
+			name = WEPopoverTests;
+			productName = WEPopoverTests;
+			productReference = 219A36FA1AA0D9E800951CC9 /* WEPopoverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		219A36E71AA0D9E800951CC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Xamarin;
+				TargetAttributes = {
+					219A36EE1AA0D9E800951CC9 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					219A36F91AA0D9E800951CC9 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 219A36EA1AA0D9E800951CC9 /* Build configuration list for PBXProject "WEPopover" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 219A36E61AA0D9E800951CC9;
+			productRefGroup = 219A36F01AA0D9E800951CC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				219A36EE1AA0D9E800951CC9 /* WEPopover */,
+				219A36F91AA0D9E800951CC9 /* WEPopoverTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		219A36F81AA0D9E800951CC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42E9AB511C575DAD006DB5FE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "##########################################\n#\n# c.f. http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4\n#\n# Version 2.7\n#\n# Latest Change:\n# - Supports iPhone 5 / iPod Touch 5 (uses Apple's workaround to lipo bug)\n#\n# Purpose:\n#   Automatically create a Universal static library for iPhone + iPad + iPhone Simulator from within XCode\n#\n# Author: Adam Martin - http://twitter.com/redglassesapps\n# Based on: original script from Eonil (main changes: Eonil's script WILL NOT WORK in Xcode GUI - it WILL CRASH YOUR COMPUTER)\n#\n\nset -e\nset -o pipefail\n\n#################[ Tests: helps workaround any future bugs in Xcode ]########\n#\nDEBUG_THIS_SCRIPT=\"false\"\n\nif [ $DEBUG_THIS_SCRIPT = \"true\" ]\nthen\necho \"########### TESTS #############\"\necho \"Use the following variables when debugging this script; note that they may change on recursions\"\necho \"BUILD_DIR = $BUILD_DIR\"\necho \"BUILD_ROOT = $BUILD_ROOT\"\necho \"CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR\"\necho \"BUILT_PRODUCTS_DIR = $BUILT_PRODUCTS_DIR\"\necho \"CONFIGURATION_TEMP_DIR = $CONFIGURATION_TEMP_DIR\"\necho \"TARGET_BUILD_DIR = $TARGET_BUILD_DIR\"\nfi\n\n#####################[ part 1 ]##################\n# First, work out the BASESDK version number (NB: Apple ought to report this, but they hide it)\n#    (incidental: searching for substrings in sh is a nightmare! Sob)\n\nSDK_VERSION=$(echo ${SDK_NAME} | grep -o '.\\{3\\}$')\n\n# Next, work out if we're in SIM or DEVICE\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nOTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}\nelse\nOTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}\nfi\n\necho \"XCode has selected SDK: ${PLATFORM_NAME} with version: ${SDK_VERSION} (although back-targetting: ${IPHONEOS_DEPLOYMENT_TARGET})\"\necho \"...therefore, OTHER_SDK_TO_BUILD = ${OTHER_SDK_TO_BUILD}\"\n#\n#####################[ end of part 1 ]##################\n\n#####################[ part 2 ]##################\n#\n# IF this is the original invocation, invoke WHATEVER other builds are required\n#\n# Xcode is already building ONE target...\n#\n# ...but this is a LIBRARY, so Apple is wrong to set it to build just one.\n# ...we need to build ALL targets\n# ...we MUST NOT re-build the target that is ALREADY being built: Xcode WILL CRASH YOUR COMPUTER if you try this (infinite recursion!)\n#\n#\n# So: build ONLY the missing platforms/configurations.\n\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: I am NOT the root invocation, so I'm NOT going to recurse\"\nelse\n# CRITICAL:\n# Prevent infinite recursion (Xcode sucks)\nexport ALREADYINVOKED=\"true\"\n\necho \"RECURSION: I am the root ... recursing all missing build targets NOW...\"\necho \"RECURSION: ...about to invoke: xcodebuild -configuration \\\"${CONFIGURATION}\\\" -project \\\"${PROJECT_NAME}.xcodeproj\\\" -target \\\"${TARGET_NAME}\\\" -sdk \\\"${OTHER_SDK_TO_BUILD}\\\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO\" BUILD_DIR=\\\"${BUILD_DIR}\\\" BUILD_ROOT=\\\"${BUILD_ROOT}\\\" SYMROOT=\\\"${SYMROOT}\\\"\n\nxcodebuild -configuration \"${CONFIGURATION}\" -project \"${PROJECT_NAME}.xcodeproj\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\"\n\nACTION=\"build\"\n\n#Merge all platform binaries as a fat binary for each configurations.\n\n# Calculate where the (multiple) built files are coming from:\nCURRENTCONFIG_DEVICE_DIR=${SYMROOT}/${CONFIGURATION}-iphoneos\nCURRENTCONFIG_SIMULATOR_DIR=${SYMROOT}/${CONFIGURATION}-iphonesimulator\n\necho \"Taking device build from: ${CURRENTCONFIG_DEVICE_DIR}\"\necho \"Taking simulator build from: ${CURRENTCONFIG_SIMULATOR_DIR}\"\n\nCREATING_UNIVERSAL_DIR=${SYMROOT}/${CONFIGURATION}-universal\necho \"...I will output a universal build to: ${CREATING_UNIVERSAL_DIR}\"\n\n# ... remove the products of previous runs of this script\n#      NB: this directory is ONLY created by this script - it should be safe to delete!\n\nrm -rf \"${CREATING_UNIVERSAL_DIR}\"\nmkdir \"${CREATING_UNIVERSAL_DIR}\"\n\n#\necho \"lipo: for current configuration (${CONFIGURATION}) creating output file: ${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\nxcrun -sdk iphoneos lipo -create -output \"${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\n\n#########\n#\n# Added: StackOverflow suggestion to also copy \"include\" files\n#    (untested, but should work OK)\n#\necho \"Fetching headers from ${PUBLIC_HEADERS_FOLDER_PATH}\"\necho \"  (if you embed your library project in another project, you will need to add\"\necho \"   a \"User Search Headers\" build setting of: (NB INCLUDE THE DOUBLE QUOTES BELOW!)\"\necho '        \"$(TARGET_BUILD_DIR)/usr/local/include/\"'\nif [ -d \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\" ]\nthen\nmkdir -p \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\n# * needs to be outside the double quotes?\ncp -r \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"* \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\nfi\nfi\n\nopen \"${CREATING_UNIVERSAL_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		219A36EB1AA0D9E800951CC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A04CB91C57630E002EEE8C /* WEPopoverContainerView.m in Sources */,
+				42A04CB81C57630E002EEE8C /* WEBlockingGestureRecognizer.m in Sources */,
+				42A04CBC1C57630E002EEE8C /* WETouchableView.m in Sources */,
+				42A04CB71C57630E002EEE8C /* UIBarButtonItem+WEPopover.m in Sources */,
+				42A04CBB1C57630E002EEE8C /* WEPopoverController.m in Sources */,
+				42A04CBA1C57630E002EEE8C /* WEPopoverContainerViewProperties.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		219A36F61AA0D9E800951CC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		219A36FD1AA0D9E800951CC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 219A36EE1AA0D9E800951CC9 /* WEPopover */;
+			targetProxy = 219A36FC1AA0D9E800951CC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		219A37011AA0D9E800951CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		219A37021AA0D9E800951CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		219A37041AA0D9E800951CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		219A37051AA0D9E800951CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		219A37071AA0D9E800951CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WEPopoverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "xamarin.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		219A37081AA0D9E800951CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WEPopoverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "xamarin.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		219A36EA1AA0D9E800951CC9 /* Build configuration list for PBXProject "WEPopover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				219A37011AA0D9E800951CC9 /* Debug */,
+				219A37021AA0D9E800951CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		219A37031AA0D9E800951CC9 /* Build configuration list for PBXNativeTarget "WEPopover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				219A37041AA0D9E800951CC9 /* Debug */,
+				219A37051AA0D9E800951CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		219A37061AA0D9E800951CC9 /* Build configuration list for PBXNativeTarget "WEPopoverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				219A37071AA0D9E800951CC9 /* Debug */,
+				219A37081AA0D9E800951CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 219A36E71AA0D9E800951CC9 /* Project object */;
+}

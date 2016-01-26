@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0535128BDD409F8BC0DA4523C90C07175AAFCF00",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0535128BDD409F8BC0DA4523C90C07175AAFCF00" : 0,
+    "E3BB7CD3119759716C629BA3699CE19695E94B23" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "715EC9D6-890A-4CE6-844B-A0123926199B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0535128BDD409F8BC0DA4523C90C07175AAFCF00" : "monotouch-bindings",
+    "E3BB7CD3119759716C629BA3699CE19695E94B23" : "monotouch-bindingsWEPopover\/binding\/WEPopoverLib\/extern\/WEPopover"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WEPopover",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WEPopover\/binding\/WEPopoverLib\/WEPopover\/WEPopover.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:mono\/monotouch-bindings.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0535128BDD409F8BC0DA4523C90C07175AAFCF00"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:werner77\/WEPopover.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E3BB7CD3119759716C629BA3699CE19695E94B23"
+    }
+  ]
+}

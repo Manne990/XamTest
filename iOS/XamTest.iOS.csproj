@@ -90,6 +90,10 @@
       <Project>{ACBCCD9F-A278-4DD4-836F-0A1619B09C92}</Project>
       <Name>XamTest</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WEPopover\WEPopover.csproj">
+      <Project>{8CF9EC43-DC9A-47F9-88C8-830B53EE6B6F}</Project>
+      <Name>WEPopover</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default.png" />
@@ -114,6 +118,27 @@
     <BundleResource Include="Resources\mask2.png" />
     <BundleResource Include="Resources\mask3.png" />
     <BundleResource Include="Resources\red.png" />
+    <BundleResource Include="Resources\Popover\.DS_Store" />
+    <BundleResource Include="Resources\Popover\popoverArrowDown-white%402x.png" />
+    <BundleResource Include="Resources\Popover\popoverArrowDown.png" />
+    <BundleResource Include="Resources\Popover\popoverArrowDown%402x.png" />
+    <BundleResource Include="Resources\Popover\popoverArrowDownSimple.png" />
+    <BundleResource Include="Resources\Popover\popoverArrowLeft-white%402x.png" />
+    <BundleResource Include="Resources\Popover\popoverArrowLeft.png" />
+    <BundleResource Include="Resources\Popover\popoverArrowLeft%402x.png" />
+    <BundleResource Include="Resources\Popover\popoverArrowLeftSimple.png" />
+    <BundleResource Include="Resources\Popover\popoverArrowRight-white%402x.png" />
+    <BundleResource Include="Resources\Popover\popoverArrowRight.png" />
+    <BundleResource Include="Resources\Popover\popoverArrowRight%402x.png" />
+    <BundleResource Include="Resources\Popover\popoverArrowRightSimple.png" />
+    <BundleResource Include="Resources\Popover\popoverArrowUp-white%402x.png" />
+    <BundleResource Include="Resources\Popover\popoverArrowUp.png" />
+    <BundleResource Include="Resources\Popover\popoverArrowUp%402x.png" />
+    <BundleResource Include="Resources\Popover\popoverArrowUpSimple.png" />
+    <BundleResource Include="Resources\Popover\popoverBg-white%402x.png" />
+    <BundleResource Include="Resources\Popover\popoverBg.png" />
+    <BundleResource Include="Resources\Popover\popoverBg%402x.png" />
+    <BundleResource Include="Resources\Popover\popoverBgSimple.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -127,11 +152,10 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Views\PopoverPageRenderer.cs" />
-    <Compile Include="Views\WEPopover\UIBarButtonItemExtensions.cs" />
-    <Compile Include="Views\WEPopover\WEBlockingGestureRecognizer.cs" />
     <Compile Include="Common\CustomPopoverBackgroundView.cs" />
     <Compile Include="Views\PopoverContentPageRenderer.cs" />
     <Compile Include="Views\ProgressAndSpinner\CircularProgressViewRenderer.cs" />
+    <Compile Include="Common\Popover.cs" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="ITunesArtwork" />
@@ -142,7 +166,6 @@
   <ItemGroup>
     <Folder Include="Views\" />
     <Folder Include="Services\" />
-    <Folder Include="Views\WEPopover\" />
     <Folder Include="Common\" />
     <Folder Include="Views\ProgressAndSpinner\" />
   </ItemGroup>

@@ -1,10 +1,12 @@
 ﻿using System;
 using UIKit;
+using WEPopover;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
+using XamTest.iOS.Common;
 using XamTest.iOS.Views;
 using XamTest.Views.Popover;
-using XamTest.iOS.Common;
+using CoreGraphics;
 
 [assembly:ExportRenderer (typeof(PopoverPage), typeof(PopoverPageRenderer))]
 namespace XamTest.iOS.Views
@@ -12,8 +14,7 @@ namespace XamTest.iOS.Views
     public class PopoverPageRenderer : ViewRenderer<PopoverPage, UIView>
     {
         private PopoverPage _formsView;
-        private UIViewController _contentViewController;
-        private UIPopoverController _popoverController;
+        private Popover _popover;
 
         protected override void OnElementChanged(ElementChangedEventArgs<PopoverPage> e)
         {
@@ -22,6 +23,10 @@ namespace XamTest.iOS.Views
             if (e.NewElement != null)
             {
                 _formsView = e.NewElement;
+                _popover = new Popover() { ShouldDismiss = true };
+
+                // This is how we get notified that the popover was closed
+                //_popover.PopoverClosed += DidDismissPopover;
             }
         }
 
@@ -29,43 +34,29 @@ namespace XamTest.iOS.Views
         {
             base.OnElementPropertyChanged(sender, e);
 
-            if (e.PropertyName == "Content" || e.PropertyName == "Renderer")
+            if (e.PropertyName == "ContentPage" || e.PropertyName == "Renderer")
             {
-                Device.BeginInvokeOnMainThread (() => ChangePage(Element?.Content));
+                Device.BeginInvokeOnMainThread (() => ChangePage(Element?.ContentPage));
                 return;
             }
 
             if(e.PropertyName == "SetPopoverVisible")
             {
-                if(_popoverController != null)
-                {
-                    _popoverController.Dismiss(false);
-                    _popoverController = null;
-                }
-
                 var pageViewController = UIApplication.SharedApplication.KeyWindow.RootViewController;
 
-                _popoverController = new UIPopoverController(_contentViewController);
-
-                _popoverController.PopoverBackgroundViewType = typeof(CustomPopoverBackgroundView);
-                _popoverController.PopoverContentSize = new CoreGraphics.CGSize(_formsView.PopoverWidth, _formsView.PopoverHeight);
-
-                _popoverController.PresentFromRect(new CoreGraphics.CGRect(_formsView.ShowFromPoint.X, _formsView.ShowFromPoint.Y, 1, 1), pageViewController.View, UIPopoverArrowDirection.Any, true);
-
-                return;
-            }
-
-            if(e.PropertyName == "SetPopoverHidden")
-            {
-                if(_popoverController != null)
-                {
-                    _popoverController.Dismiss(false);
-                    _popoverController = null;
-                }
+                _popover.PresentFromRect(new CoreGraphics.CGRect(_formsView.ShowFromPoint.X, _formsView.ShowFromPoint.Y, 1, 1), pageViewController.View, UIPopoverArrowDirection.Any, true);
 
                 return;
             }
         }
+            
+        /*
+        public void DidDismissPopover(WEPopoverController popover)
+        {
+            //TODO: Handle dismissal
+            Console.WriteLine("DidDismissPopover");
+        }
+        */
 
         private void ChangePage(Page page)
         {
@@ -73,16 +64,24 @@ namespace XamTest.iOS.Views
             {
                 try
                 {
-                    _contentViewController = page.CreateViewController();
+                    _popover.ContentViewController = page.CreateViewController();
+
+                    _popover.ContentViewController.ContentSizeForViewInPopover = new CGSize(_formsView.PopoverWidth, _formsView.PopoverHeight);
+
+                    if (UIDevice.CurrentDevice.CheckSystemVersion (7, 0)) {
+                        _popover.ContentViewController.PreferredContentSize = _popover.ContentViewController.ContentSizeForViewInPopover;
+                    }
+
                 }
                 catch (Exception ex)
                 {
+                    _popover.ContentViewController = null;
                     Console.WriteLine ("error creating page " + ex.Message);
                 }
             }
             else
             {
-                _contentViewController = null;
+                _popover.ContentViewController = null;
             }
         }
     }

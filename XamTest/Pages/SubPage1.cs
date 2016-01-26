@@ -10,9 +10,9 @@ namespace XamTest
         public SubPage1()
         {
             Content = new Frame {
-                Content = new Label { Text = "SubPage1", TextColor = Color.White },
+                Content = new Label { Text = "This is Xamarin Forms Content!", TextColor = Color.White },
                 BackgroundColor = Color.Maroon,
-                Padding = new Thickness(50),
+                Padding = new Thickness(20),
                 VerticalOptions = LayoutOptions.FillAndExpand,
                 HorizontalOptions = LayoutOptions.FillAndExpand,
             };

@@ -8,7 +8,7 @@ namespace XamTest
     {
         public App()
         {
-            MainPage = new XamTest.Pages.CircularProgressPage();
+            MainPage = new XamTest.Pages.PopoverExamplePage();
         }
 
         protected override void OnStart()

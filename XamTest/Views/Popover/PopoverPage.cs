@@ -10,7 +10,7 @@ namespace XamTest.Views.Popover
             this.IsVisible = false;
         }
 
-        public Page Content { get; set; }
+        public PopoverContentPage ContentPage { get; set; }
         public Page ParentPage { get; set; }
         public int PopoverWidth { get; set; }
         public int PopoverHeight { get; set; }
@@ -24,12 +24,14 @@ namespace XamTest.Views.Popover
             set { SetValue(SetPopoverVisibleProperty, value); }
         }
 
+        /*
         private static readonly BindableProperty SetPopoverHiddenProperty = BindableProperty.Create("SetPopoverHidden", typeof(bool), typeof(PopoverPage), false);
         private bool SetPopoverHidden
         {
             get { return (bool)GetValue(SetPopoverHiddenProperty); }
             set { SetValue(SetPopoverHiddenProperty, value); }
         }
+        */
 
         public void Show(Page parentPage, Point point)
         {
@@ -39,9 +41,11 @@ namespace XamTest.Views.Popover
             this.SetPopoverVisible = !this.SetPopoverVisible;
         }
 
+        /*
         public void Hide()
         {
             this.SetPopoverHidden = !this.SetPopoverHidden;
         }
+        */
     }
 }
