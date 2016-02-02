@@ -17,4 +17,6 @@ namespace XamTest.Views.HexagonButton
             }
         }
     }
+
+    //TODO: Custom Renderer for Android
 }
