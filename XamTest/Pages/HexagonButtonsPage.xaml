@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:hexagon="clr-namespace:XamTest.Views.HexagonButton;assembly=XamTest"
+	x:Class="XamTest.Pages.HexagonButtonsPage">
+
+	<ContentPage.Content>
+		<AbsoluteLayout BackgroundColor="#3499dc">
+			<hexagon:HexagonButtonView Source="Hexagon.png" Tag="ButtonCenter" Clicked="ButtonClicked" AbsoluteLayout.LayoutFlags="None" AbsoluteLayout.LayoutBounds="160, 240, 51, 46"></hexagon:HexagonButtonView>
+
+			<hexagon:HexagonButtonView Source="Hexagon.png" Tag="ButtonTop" Clicked="ButtonClicked" AbsoluteLayout.LayoutFlags="None" AbsoluteLayout.LayoutBounds="160, 194, 51, 46"></hexagon:HexagonButtonView>
+
+			<hexagon:HexagonButtonView Source="Hexagon.png" Tag="ButtonRightTop" Clicked="ButtonClicked" AbsoluteLayout.LayoutFlags="None" AbsoluteLayout.LayoutBounds="200, 217, 51, 46"></hexagon:HexagonButtonView>
+			<hexagon:HexagonButtonView Source="Hexagon.png" Tag="ButtonRightBottom" Clicked="ButtonClicked" AbsoluteLayout.LayoutFlags="None" AbsoluteLayout.LayoutBounds="200, 263, 51, 46"></hexagon:HexagonButtonView>
+
+			<hexagon:HexagonButtonView Source="Hexagon.png" Tag="ButtonLeftTop" Clicked="ButtonClicked" AbsoluteLayout.LayoutFlags="None" AbsoluteLayout.LayoutBounds="120, 217, 51, 46"></hexagon:HexagonButtonView>
+			<hexagon:HexagonButtonView Source="Hexagon.png" Tag="ButtonLeftBottom" Clicked="ButtonClicked" AbsoluteLayout.LayoutFlags="None" AbsoluteLayout.LayoutBounds="120, 263, 51, 46"></hexagon:HexagonButtonView>
+
+			<hexagon:HexagonButtonView Source="Hexagon.png" Tag="ButtonBottom" Clicked="ButtonClicked" AbsoluteLayout.LayoutFlags="None" AbsoluteLayout.LayoutBounds="160, 286, 51, 46"></hexagon:HexagonButtonView>
+
+			<Label x:Name="ResultsLabel" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5, 0.9, 320, 30" BackgroundColor="White" />
+		</AbsoluteLayout>
+	</ContentPage.Content>
+
+</ContentPage>

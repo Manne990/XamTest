@@ -12,8 +12,8 @@ namespace XamTest.iOS.Views.ProgressAndSpinner
 {
     public class CircularProgressViewRenderer : ImageRenderer
     {
-        nfloat _startAngle = -((nfloat)Math.PI / 2f);
-        CircularProgressView _formsView;
+        private nfloat _startAngle = -((nfloat)Math.PI / 2f);
+        private CircularProgressView _formsView;
 
         protected override void OnElementChanged(ElementChangedEventArgs<Image> e)
         {

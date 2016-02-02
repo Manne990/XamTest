@@ -8,7 +8,7 @@ namespace XamTest
     {
         public App()
         {
-            MainPage = new XamTest.Pages.PopoverExamplePage();
+            MainPage = new XamTest.Pages.HexagonButtonsPage();
         }
 
         protected override void OnStart()

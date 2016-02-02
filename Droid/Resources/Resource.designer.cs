@@ -3542,6 +3542,9 @@ namespace XamTest.Droid
 			// aapt resource value: 0x7f0a003f
 			public const int list_item = 2131361855;
 			
+			// aapt resource value: 0x7f0a0081
+			public const int mainScrollView = 2131361921;
+			
 			// aapt resource value: 0x7f0a0077
 			public const int media_actions = 2131361911;
 			
@@ -3706,6 +3709,9 @@ namespace XamTest.Droid
 			
 			// aapt resource value: 0x7f0a0048
 			public const int textSpacerNoButtons = 2131361864;
+			
+			// aapt resource value: 0x7f0a0082
+			public const int textView1 = 2131361922;
 			
 			// aapt resource value: 0x7f0a007a
 			public const int time = 2131361914;
@@ -3917,16 +3923,19 @@ namespace XamTest.Droid
 			public const int notification_template_part_time = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int select_dialog_item_material = 2130903084;
+			public const int popover_showed_view = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int select_dialog_multichoice_material = 2130903085;
+			public const int select_dialog_item_material = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int select_dialog_singlechoice_material = 2130903086;
+			public const int select_dialog_multichoice_material = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int support_simple_spinner_dropdown_item = 2130903087;
+			public const int select_dialog_singlechoice_material = 2130903087;
+			
+			// aapt resource value: 0x7f030030
+			public const int support_simple_spinner_dropdown_item = 2130903088;
 			
 			static Layout()
 			{

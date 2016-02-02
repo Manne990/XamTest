@@ -25,7 +25,6 @@ namespace XamTest.iOS.Views
                 _formsView = e.NewElement;
                 _popover = new Popover() { ShouldDismiss = true };
 
-                // This is how we get notified that the popover was closed
                 //_popover.PopoverClosed += DidDismissPopover;
             }
         }
@@ -36,7 +35,7 @@ namespace XamTest.iOS.Views
 
             if (e.PropertyName == "ContentPage" || e.PropertyName == "Renderer")
             {
-                Device.BeginInvokeOnMainThread (() => ChangePage(Element?.ContentPage));
+                Device.BeginInvokeOnMainThread (() => CreateContentViewController(Element?.ContentPage));
                 return;
             }
 
@@ -51,37 +50,35 @@ namespace XamTest.iOS.Views
         }
             
         /*
-        public void DidDismissPopover(WEPopoverController popover)
+        private void DidDismissPopover(WEPopoverController popover)
         {
-            //TODO: Handle dismissal
             Console.WriteLine("DidDismissPopover");
         }
         */
 
-        private void ChangePage(Page page)
+        private void CreateContentViewController(Page page)
         {
-            if (page != null)
-            {
-                try
-                {
-                    _popover.ContentViewController = page.CreateViewController();
-
-                    _popover.ContentViewController.ContentSizeForViewInPopover = new CGSize(_formsView.PopoverWidth, _formsView.PopoverHeight);
-
-                    if (UIDevice.CurrentDevice.CheckSystemVersion (7, 0)) {
-                        _popover.ContentViewController.PreferredContentSize = _popover.ContentViewController.ContentSizeForViewInPopover;
-                    }
-
-                }
-                catch (Exception ex)
-                {
-                    _popover.ContentViewController = null;
-                    Console.WriteLine ("error creating page " + ex.Message);
-                }
-            }
-            else
+            if(page == null)
             {
                 _popover.ContentViewController = null;
+                return;
+            }
+
+            try
+            {
+                _popover.ContentViewController = page.CreateViewController();
+
+                _popover.ContentViewController.ContentSizeForViewInPopover = new CGSize(_formsView.PopoverWidth, _formsView.PopoverHeight);
+
+                if (UIDevice.CurrentDevice.CheckSystemVersion (7, 0)) {
+                    _popover.ContentViewController.PreferredContentSize = _popover.ContentViewController.ContentSizeForViewInPopover;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                _popover.ContentViewController = null;
+                Console.WriteLine ("Error creating ContentViewController: " + ex.Message);
             }
         }
     }

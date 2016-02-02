@@ -8,13 +8,13 @@
 
 	<ContentPage.Content>
 		<StackLayout>
-			<popover:PopoverPage x:Name="popoverPage" PopoverWidth="300" PopoverHeight="450">
+			<Button Text="Show" Clicked="ShowButtonClicked" />
+
+			<popover:PopoverPage x:Name="popoverPage" PopoverWidth="200" PopoverHeight="250">
 				<popover:PopoverPage.ContentPage>
 					<local:SubPage1 />
 				</popover:PopoverPage.ContentPage>
 			</popover:PopoverPage>
-
-			<Button Text="Show" Clicked="ShowButtonClicked" />
 		</StackLayout>
 	</ContentPage.Content>
 

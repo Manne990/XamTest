@@ -13,8 +13,6 @@ namespace PopOver
 {
 	public class PopoverView : RelativeLayout, Android.Views.View.IOnTouchListener
 	{
-
-
 		public interface PopoverViewDelegate
 		{
 			/**
@@ -299,12 +297,11 @@ namespace PopOver
 		private void addPopoverInRect (Rect insertRect)
 		{
 			//Set layout params
-			LayoutParams insertParams = new LayoutParams (insertRect.Width (), insertRect.Height ());
-			insertParams.LeftMargin = insertRect.Left;
-			insertParams.TopMargin = insertRect.Top;
+            LayoutParams insertParams = new LayoutParams (insertRect.Width (), insertRect.Height ());
+            insertParams.LeftMargin = insertRect.Left;
+            insertParams.TopMargin = insertRect.Top;
 			//Add the view
 			AddView (popoverView, insertParams);
-
 		}
 
 
@@ -722,7 +719,10 @@ namespace PopOver
 
 
 
-
+        protected override void OnLayout(bool changed, int l, int t, int r, int b)
+        {
+            base.OnLayout(changed, l, t, r, b);
+        }
 
 
 
@@ -751,8 +751,9 @@ namespace PopOver
 			Superview = group;
 
 			//First, add the view to the view group. The popover will cover the whole area
-			LayoutParams insertParams = new  LayoutParams (LayoutParams.MatchParent, LayoutParams.MatchParent);
-			group.AddView (this, insertParams);
+			//LayoutParams insertParams = new  LayoutParams (LayoutParams.MatchParent, LayoutParams.MatchParent);
+			//group.AddView(this, insertParams);
+            this.SetBackgroundColor(Color.Yellow);
 
 			//Now, save rect for the layout (is the same as the superview)
 			popoverLayoutRect = PopoverView.getFrameForView (Superview);
@@ -766,6 +767,9 @@ namespace PopOver
 //				Rect bestRect = possibleRects.get(best);
 			Rect bestRect = null; 
 			possibleRects.TryGetValue (best, out bestRect);
+
+
+
 			addPopoverInRect (bestRect);
 			//Add arrow image
 			addArrow (originRect, best);

@@ -7,14 +7,17 @@ namespace XamTest.Views.Popover
     {
         public PopoverPage()
         {
-            this.IsVisible = false;
+            //this.IsVisible = false;
+            this.BackgroundColor = Color.Aqua;
+            this.WidthRequest = 300;
+            this.HeightRequest = 300;
         }
 
         public PopoverContentPage ContentPage { get; set; }
         public Page ParentPage { get; set; }
         public int PopoverWidth { get; set; }
         public int PopoverHeight { get; set; }
-        public new bool IsVisible { get; private set; }
+        //public new bool IsVisible { get; private set; }
         public Point ShowFromPoint { get; private set; }
 
         private static readonly BindableProperty SetPopoverVisibleProperty = BindableProperty.Create("SetPopoverVisible", typeof(bool), typeof(PopoverPage), false);

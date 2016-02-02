@@ -139,6 +139,9 @@
     <BundleResource Include="Resources\Popover\popoverBg.png" />
     <BundleResource Include="Resources\Popover\popoverBg%402x.png" />
     <BundleResource Include="Resources\Popover\popoverBgSimple.png" />
+    <BundleResource Include="Resources\Hexagon.png" />
+    <BundleResource Include="Resources\Hexagon%402x.png" />
+    <BundleResource Include="Resources\Hexagon%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -156,6 +159,7 @@
     <Compile Include="Views\PopoverContentPageRenderer.cs" />
     <Compile Include="Views\ProgressAndSpinner\CircularProgressViewRenderer.cs" />
     <Compile Include="Common\Popover.cs" />
+    <Compile Include="Views\HexagonButtonViewRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="ITunesArtwork" />

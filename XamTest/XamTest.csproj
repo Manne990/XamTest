@@ -51,6 +51,18 @@
       <DependentUpon>DeviceMotionPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Common\RavenClientTest.cs" />
+    <Compile Include="Pages\NavPage1.xaml.cs">
+      <DependentUpon>NavPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NavPage2.xaml.cs">
+      <DependentUpon>NavPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CustomNavigationPage.cs" />
+    <Compile Include="Common\CustomNavigationProxy.cs" />
+    <Compile Include="Pages\HexagonButtonsPage.xaml.cs">
+      <DependentUpon>HexagonButtonsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HexagonButton\HexagonButtonView.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.0.1.6495\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.0.1.6495\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -87,6 +99,7 @@
     <Folder Include="Extensions\" />
     <Folder Include="Views\ProgressAndSpinner\" />
     <Folder Include="Common\" />
+    <Folder Include="Views\HexagonButton\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\MainPage.xaml">
@@ -99,6 +112,15 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\DeviceMotionPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\NavPage1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\NavPage2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\HexagonButtonsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
