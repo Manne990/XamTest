@@ -59,7 +59,7 @@
     <MtouchProfiling>true</MtouchProfiling>
     <CodesignKey>iPhone Distribution: byBrick Interface AB</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignProvision>b1890064-c3fa-49b7-8111-b5301ff857f8</CodesignProvision>
+    <CodesignProvision>cc2c5550-02c2-4d57-8cc5-18d5e293f289</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -89,10 +89,6 @@
     <ProjectReference Include="..\XamTest\XamTest.csproj">
       <Project>{ACBCCD9F-A278-4DD4-836F-0A1619B09C92}</Project>
       <Name>XamTest</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WEPopover\WEPopover.csproj">
-      <Project>{8CF9EC43-DC9A-47F9-88C8-830B53EE6B6F}</Project>
-      <Name>WEPopover</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

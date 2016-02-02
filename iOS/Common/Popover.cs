@@ -1,12 +1,13 @@
 ﻿using System;
 using CoreGraphics;
 using UIKit;
-using WEPopover;
+//using WEPopover;
 
 namespace XamTest.iOS.Common
 {
     public class Popover
     {
+        /*
         private WEPopoverController _popoverController;
 
         public Popover()
@@ -142,6 +143,6 @@ namespace XamTest.iOS.Common
                 }
 
             }
-        }
+        }*/
     }
 }

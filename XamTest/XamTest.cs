@@ -1,5 +1,4 @@
 ﻿using System;
-using SharpRaven;
 using Xamarin.Forms;
 
 namespace XamTest

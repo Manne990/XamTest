@@ -1,6 +1,6 @@
 ﻿using System;
 using UIKit;
-using WEPopover;
+//using WEPopover;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 using XamTest.iOS.Common;
@@ -23,7 +23,7 @@ namespace XamTest.iOS.Views
             if (e.NewElement != null)
             {
                 _formsView = e.NewElement;
-                _popover = new Popover() { ShouldDismiss = true };
+                //_popover = new Popover() { ShouldDismiss = true };
 
                 //_popover.PopoverClosed += DidDismissPopover;
             }
@@ -43,7 +43,7 @@ namespace XamTest.iOS.Views
             {
                 var pageViewController = UIApplication.SharedApplication.KeyWindow.RootViewController;
 
-                _popover.PresentFromRect(new CoreGraphics.CGRect(_formsView.ShowFromPoint.X, _formsView.ShowFromPoint.Y, 1, 1), pageViewController.View, UIPopoverArrowDirection.Any, true);
+                //s_popover.PresentFromRect(new CoreGraphics.CGRect(_formsView.ShowFromPoint.X, _formsView.ShowFromPoint.Y, 1, 1), pageViewController.View, UIPopoverArrowDirection.Any, true);
 
                 return;
             }
@@ -58,6 +58,7 @@ namespace XamTest.iOS.Views
 
         private void CreateContentViewController(Page page)
         {
+            /*
             if(page == null)
             {
                 _popover.ContentViewController = null;
@@ -80,6 +81,7 @@ namespace XamTest.iOS.Views
                 _popover.ContentViewController = null;
                 Console.WriteLine ("Error creating ContentViewController: " + ex.Message);
             }
+            */
         }
     }
 }
