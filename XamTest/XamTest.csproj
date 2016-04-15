@@ -56,8 +56,6 @@
     <Compile Include="Pages\NavPage2.xaml.cs">
       <DependentUpon>NavPage2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Common\CustomNavigationPage.cs" />
-    <Compile Include="Common\CustomNavigationProxy.cs" />
     <Compile Include="Pages\HexagonButtonsPage.xaml.cs">
       <DependentUpon>HexagonButtonsPage.xaml</DependentUpon>
     </Compile>
@@ -65,11 +63,11 @@
     <Compile Include="Pages\ControlsPage.xaml.cs">
       <DependentUpon>ControlsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Common\TemplatedTableView\TemplatedTableViewContentAlignment.cs" />
-    <Compile Include="Common\TemplatedTableView\TemplatedTableView.cs" />
     <Compile Include="Pages\TemplatedTableViewPage.xaml.cs">
       <DependentUpon>TemplatedTableViewPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\TemplatedTableView\TemplatedTableView.cs" />
+    <Compile Include="Views\TemplatedTableView\TemplatedTableViewContentAlignment.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.0.1.6495\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.0.1.6495\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -105,9 +103,8 @@
     <Folder Include="Views\Popover\" />
     <Folder Include="Extensions\" />
     <Folder Include="Views\ProgressAndSpinner\" />
-    <Folder Include="Common\" />
     <Folder Include="Views\HexagonButton\" />
-    <Folder Include="Common\TemplatedTableView\" />
+    <Folder Include="Views\TemplatedTableView\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\MainPage.xaml">

@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using Xamarin.Forms;
 
-namespace XamTest.Common.TemplatedTableView
+namespace XamTest.Views.TemplatedTableView
 {
 	public class TemplatedTableView : Grid
 	{

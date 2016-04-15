@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace XamTest.Common.TemplatedTableView
+namespace XamTest.Views.TemplatedTableView
 {
 	public enum TemplatedTableViewContentAlignment
 	{
