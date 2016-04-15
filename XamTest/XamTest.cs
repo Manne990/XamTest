@@ -7,7 +7,7 @@ namespace XamTest
     {
         public App()
         {
-            MainPage = new XamTest.Pages.HexagonButtonsPage();
+			MainPage = new XamTest.Pages.TemplatedTableViewPage();
         }
 
         protected override void OnStart()

@@ -16,8 +16,11 @@ namespace XamTest.Pages
         {
             base.OnAppearing();
 
-            StartSpinner(spinner);
-            StartProgress(progressView);
+            //var factory = DependencyService.Get<XamTest.Common.ISQLiteFactory>();
+            //var connection = factory.CreateConnection("test.db");
+
+            //StartSpinner(spinner);
+            //StartProgress(progressView);
         }
 
         private void StartSpinner(VisualElement ve)
