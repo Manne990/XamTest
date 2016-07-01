@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+		xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:validation2="clr-namespace:XamTest.Common.Validation2;assembly=XamTest"
+		x:Class="XamTest.Pages.Validation3.Validation3Page">
+	
+	<ContentPage.Content>
+		<StackLayout Padding="10,40,10,10">
+			<validation2:ValidationEntry 
+					Text="{Binding Name.Value, Mode=TwoWay}"
+					Errors="{Binding Name.Errors}" 
+					IsValid="{Binding Name.IsValid}" />
+
+			<Button IsEnabled="{Binding IsValid}" Command="{Binding SaveCommand}" Text="Save" />
+		</StackLayout>
+	</ContentPage.Content>
+	
+</ContentPage>

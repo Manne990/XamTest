@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:rangeslider="clr-namespace:XamTest.Views.RangeSlider;assembly=XamTest"
+	x:Class="XamTest.Pages.RangeSliderPage">
+
+	<ContentPage.Content>
+		<StackLayout BackgroundColor="Black" Padding="10,40,10,10" Spacing="50">
+			<rangeslider:RangeSliderView 
+				BackgroundColor="Transparent"
+				BarColor="#e1000e"
+				HandleImageSource="handle_iphone.png"
+	    		MinValue="0" 
+	    		MaxValue="35" 
+	    		Step="1" 
+	    		ShowBubbles="true" 
+	    		BubbleImageSource="bubble.png"
+	    		ValueChangeCompleted="MaxHydraulicReachValueChanged"
+	    		LeftValue="{Binding MaxHydraulicReachMin, Mode=TwoWay}" 
+	    		RightValue="{Binding MaxHydraulicReachMax, Mode=TwoWay}" />
+
+			<rangeslider:RangeSliderView 
+				BackgroundColor="Transparent"
+				BarColor="#e1000e"
+				HandleImageSource="handle_iphone.png"
+	    		MinValue="0" 
+	    		MaxValue="20000" 
+	    		Step="100" 
+	    		ShowBubbles="true" 
+	    		BubbleImageSource="bubble.png"
+	    		ValueChangeCompleted="MaxLiftingCapacityValueChanged"
+	    		LeftValue="{Binding MaxLiftingCapacityMin, Mode=TwoWay}" 
+	    		RightValue="{Binding MaxLiftingCapacityMax, Mode=TwoWay}" />
+		</StackLayout>
+	</ContentPage.Content>
+
+</ContentPage>

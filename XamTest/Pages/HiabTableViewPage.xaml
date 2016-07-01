@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+		xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:tableView="clr-namespace:XamTest.Views.TableView;assembly=XamTest"
+		x:Class="XamTest.Pages.HiabTableViewPage">
+	
+	<ContentPage.Content>
+
+		<ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="20,40,20,20" Orientation="Both" BackgroundColor="#dcdddf">
+			<Grid RowSpacing="0" ColumnSpacing="0" BackgroundColor="Black">
+		        <Grid.RowDefinitions>
+		            <RowDefinition Height="3" />
+		            <RowDefinition Height="*" />
+					<RowDefinition Height="3" />
+		        </Grid.RowDefinitions>
+				
+		        <Grid.ColumnDefinitions>
+		            <ColumnDefinition Width="3" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="3" />
+		        </Grid.ColumnDefinitions>
+
+				<tableView:TableView 
+						Items="{Binding FormattedTableData}" 
+						Grid.Row="1"
+						Grid.Column="1"
+						BackgroundColor="Black"
+						HeaderSeparatorLineColor="Red"
+						RowSpacing="3" 
+						ColumnSpacing="3" />
+			</Grid>
+		</ScrollView>
+		
+	</ContentPage.Content>
+	
+</ContentPage>

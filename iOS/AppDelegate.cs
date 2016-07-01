@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
+﻿using Foundation;
 using UIKit;
+using XamTest.iOS.Common;
 
 namespace XamTest.iOS
 {
@@ -12,6 +9,8 @@ namespace XamTest.iOS
     {
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            System.Diagnostics.Debug.WriteLine(string.Format("iOS Platform: {0}, {1}", DeviceHelper.Model, DeviceHelper.RawModelString));
+
             global::Xamarin.Forms.Forms.Init();
 
             LoadApplication(new App());
@@ -20,4 +19,3 @@ namespace XamTest.iOS
         }
     }
 }
-

@@ -7,7 +7,9 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Xamarin.Forms;
 
+[assembly:ResolutionGroupName ("XamTest")]
 namespace XamTest.Droid
 {
     [Activity(Label = "XamTest.Droid", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
