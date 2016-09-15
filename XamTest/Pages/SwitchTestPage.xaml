@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+		xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:gestureViews="clr-namespace:XamTest.Views.GestureView;assembly=XamTest"
+		x:Class="XamTest.Pages.SwitchTestPage">
+	
+	<ContentPage.Content>
+		
+		<StackLayout Padding="20,40,20,20" BackgroundColor="Aqua">
+			<AbsoluteLayout>
+				<Switch VerticalOptions="Center" IsToggled="{Binding SyncImages}" Toggled="Handle_Toggled" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"></Switch>
+				<gestureViews:GestureView BackgroundColor="Transparent" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" />
+			</AbsoluteLayout>
+			
+			<StackLayout Padding="40" BackgroundColor="Silver">
+				<StackLayout.GestureRecognizers>
+					<TapGestureRecognizer Tapped="Handle_Tapped" />
+				</StackLayout.GestureRecognizers>
+				<Switch VerticalOptions="Center" IsToggled="{Binding SyncImages}" Toggled="Handle_Toggled"></Switch>
+			</StackLayout>
+
+			<Button Text="Toggle" Clicked="Handle_Clicked" />
+		</StackLayout>
+		
+	</ContentPage.Content>
+	
+</ContentPage>

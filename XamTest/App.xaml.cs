@@ -8,7 +8,7 @@ namespace XamTest
         {
             InitializeComponent();
 
-            MainPage = new Pages.HiabTableViewPage();
+            MainPage = new Pages.SwitchTestPage();
         }
     }
 }

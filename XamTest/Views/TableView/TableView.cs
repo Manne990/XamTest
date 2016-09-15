@@ -16,7 +16,7 @@ namespace XamTest.Views.TableView
 
         protected override void OnPropertyChanged(string propertyName)
         {
-            if (propertyName == "ItemsProperty")
+            if(propertyName == "ItemsProperty")
             {
                 UpdateGrid();
             }
