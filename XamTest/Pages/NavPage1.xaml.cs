@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace XamTest.Pages
@@ -15,8 +15,15 @@ namespace XamTest.Pages
 
         private async void ButtonClicked(object sender, EventArgs e)
         {
-            await this.Navigation.PushAsync(new NavPage2());
+            //await Task.Delay(500);
+
+            //await this.Navigation.PushAsync(new ExtendedTestPage("Test from prev view"));
+
+            //var page = await ExtendedTestPage.CreatePageAsync();
+
+            //await this.Navigation.PushAsync(page);
+
+            await this.Navigation.PushAsync(new ExtendedTestPage());
         }
     }
 }
-

@@ -1,5 +1,6 @@
 ﻿using Foundation;
 using UIKit;
+using Xamarin.Forms;
 using XamTest.iOS.Common;
 
 namespace XamTest.iOS
@@ -14,6 +15,10 @@ namespace XamTest.iOS
             global::Xamarin.Forms.Forms.Init();
 
             LoadApplication(new App());
+
+            Forms.ViewInitialized += (object sender, ViewInitializedEventArgs e) => {
+                System.Diagnostics.Debug.WriteLine(string.Format("{0}, {1}", e.View.ToString(), e.NativeView.ToString()));
+            };
 
             return base.FinishedLaunching(app, options);
         }

@@ -113,6 +113,11 @@
       <DependentUpon>SwitchTestPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\GestureView\GestureView.cs" />
+    <Compile Include="Common\ExtendedPage\ExtendedPage.cs" />
+    <Compile Include="Pages\ExtendedTestPage.xaml.cs">
+      <DependentUpon>ExtendedTestPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ExtendedPage\IPageExtendedLifecycle.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.2.0.31\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.2.0.31\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -172,6 +177,7 @@
     <Folder Include="Common\Validation3\" />
     <Folder Include="Views\TableView\" />
     <Folder Include="Views\GestureView\" />
+    <Folder Include="Common\ExtendedPage\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\MainPage.xaml">
@@ -226,6 +232,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\SwitchTestPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\ExtendedTestPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
