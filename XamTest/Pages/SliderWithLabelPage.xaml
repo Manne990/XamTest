@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="XamTest.SliderWithLabelPage">
+	
+	<ContentPage.Content>
+		<StackLayout BackgroundColor="Aqua">
+			<Slider x:Name="MySlider" Value="1" Maximum="5" Minimum="1" Margin="21, 50, 21, 0" ValueChanged="Handle_ValueChanged" />
+			<Grid BackgroundColor="Olive" ColumnSpacing="0">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="30" />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+
+				<Label Grid.Row="0" Grid.Column="0" Text="1" HorizontalTextAlignment="Center" BackgroundColor="Fuchsia" TextColor="Black" />
+				<Label Grid.Row="0" Grid.Column="1" Text="2" HorizontalTextAlignment="Center" BackgroundColor="Lime" TextColor="Black" />
+				<Label Grid.Row="0" Grid.Column="2" Text="3" HorizontalTextAlignment="Center" BackgroundColor="Gray" TextColor="Black" />
+				<Label Grid.Row="0" Grid.Column="3" Text="4" HorizontalTextAlignment="Center" BackgroundColor="Yellow" TextColor="Black" />
+				<Label Grid.Row="0" Grid.Column="4" Text="5" HorizontalTextAlignment="Center" BackgroundColor="White" TextColor="Black" />
+			</Grid>
+		</StackLayout>
+	</ContentPage.Content>
+	
+</ContentPage>
