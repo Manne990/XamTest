@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamTest.MainPage">
 	<ContentPage.Content>
-		<ScrollView>
-			<StackLayout>
-				<AbsoluteLayout BackgroundColor="Aqua" VerticalOptions="Start">
-					<Image x:Name="Placeholder" Aspect="AspectFit" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" BackgroundColor="Lime"></Image>
-<!--					<Image x:Name="RealImage" Aspect="AspectFit" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" BackgroundColor="Fuchsia"></Image>-->
-				</AbsoluteLayout>
-				<Label Text="HEPP!" />
-			</StackLayout>
-		</ScrollView>
+        <AbsoluteLayout>
+            <Image Aspect="AspectFit" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5, 0.5, 1, 1" Source="Yamaha"></Image>
+        </AbsoluteLayout>
+
+<!--        <StackLayout>
+            <Image Aspect="AspectFit" Source="Yamaha" WidthRequest="100" HeightRequest="100" Margin="0, 200, 0, 0"></Image>
+        </StackLayout>-->
 	</ContentPage.Content>
 </ContentPage>

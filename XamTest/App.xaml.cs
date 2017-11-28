@@ -8,7 +8,7 @@ namespace XamTest
         {
             InitializeComponent();
 
-			MainPage = new ExpandableMenuPage();
+            MainPage = new MainPage();
         }
     }
 }
